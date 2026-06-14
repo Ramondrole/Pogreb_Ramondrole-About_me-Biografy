@@ -1,0 +1,78 @@
+.biography-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.biography-wrapper h1 {
+    font-family: 'Orbitron', monospace;
+    font-size: 2.5rem;
+    color: var(--neon-blue, #00f3ff);
+    margin-bottom: 30px;
+    text-shadow: 0 0 15px rgba(0, 243, 255, 0.5);
+    text-align: center;
+}
+
+.bio-content {
+    background: linear-gradient(135deg, rgba(0, 20, 40, 0.6), rgba(10, 10, 30, 0.7));
+    border: 1px solid var(--neon-blue, #00f3ff);
+    border-radius: 15px;
+    padding: 30px;
+    backdrop-filter: blur(5px);
+    transition: all 0.3s ease;
+}
+
+.bio-content:hover {
+    border-color: var(--neon-pink, #ff00ff);
+    box-shadow: 0 0 30px rgba(255, 0, 255, 0.2);
+}
+
+.bio-content p {
+    color: #e0e0ff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    text-align: justify;
+    margin: 0;
+}
+
+.bio-content p::first-letter {
+    font-size: 2rem;
+    color: var(--neon-pink, #ff00ff);
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+@media (max-width: 768px) {
+    .biography-wrapper h1 {
+        font-size: 2rem;
+    }
+    
+    .bio-content {
+        padding: 20px;
+    }
+    
+    .bio-content p {
+        font-size: 1rem;
+        line-height: 1.6;
+    }
+}
+
+@media (max-width: 480px) {
+    .biography-wrapper h1 {
+        font-size: 1.6rem;
+    }
+    
+    .bio-content {
+        padding: 15px;
+    }
+    
+    .bio-content p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .bio-content p::first-letter {
+        font-size: 1.5rem;
+    }
+}
