@@ -1,0 +1,50 @@
+.biography-wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.biography-wrapper h1 {
+    text-align: center;
+    border-left: none;
+    border-bottom: 6px solid var(--sehnsucht-red);
+    padding-bottom: 15px;
+}
+
+.bio-content {
+    background: var(--sehnsucht-panel);
+    border: 1px solid var(--sehnsucht-border);
+    border-bottom: 6px solid var(--sehnsucht-red);
+    padding: 35px;
+    box-shadow: 8px 8px 0 rgba(0,0,0,0.5);
+}
+
+.bio-content p {
+    color: var(--sehnsucht-text);
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.bio-content p::first-letter {
+    font-size: 2.5rem;
+    color: var(--sehnsucht-red);
+    font-weight: bold;
+    float: left;
+    margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+    .bio-content {
+        padding: 20px;
+    }
+    
+    .bio-content p {
+        font-size: 1rem;
+    }
+    
+    .bio-content p::first-letter {
+        font-size: 2rem;
+    }
+}
